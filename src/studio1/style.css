@@ -35,7 +35,7 @@ body {
 	font-family: system;
 	font-style: normal;
 	font-weight: 300;
-	src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Condensed"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+	src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Segoe UI Light"), local("Ubuntu Condensed"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
 }
 
 .body-font,
@@ -115,21 +115,21 @@ main {
 	align-items: baseline;
 }
 
-.main-section-column {
+.portal-column {
 	width: calc((50rem / 3) - 0.75rem);
 	height: 100%;
 	padding: 1rem;
 }
 
-.main-section-column:not(:last-child) {
+.portal-column:not(:last-child) {
 	margin-right: 1rem;
 }
 
-.column-nav ul {
+.portal-nav ul {
 	list-style: none;
 }
 
-.column-nav li {
+.portal-nav li {
 	margin-bottom: 0.5em;
 } 
 
