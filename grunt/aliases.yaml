@@ -1,7 +1,12 @@
 default:
   description: 'Default (production) build'
   tasks:
-    - prod
+    - dev
+dev:
+  description: 'full build of all tasks'
+  tasks:
+    - 'clean'
+    - copy
 prod:
   description: 'full build of all tasks'
   tasks:

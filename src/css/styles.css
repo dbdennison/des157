@@ -1,0 +1,153 @@
+/*=================
+	CORE
+=================*/
+
+html {
+	height: 100%;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+body {
+	background-color: hsl(195, 82%, 9%);
+	min-height: 100vh;
+}
+
+.color {
+	color: currentColor;
+}
+
+.bg-color {
+	background-color: currentColor;
+}
+
+/*=================
+	TYPOGRAPHY
+=================*/
+
+@font-face {
+	font-family: system;
+	font-style: normal;
+	font-weight: 300;
+	src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Segoe UI Light"), local("Ubuntu Condensed"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+}
+
+.body-font,
+body {
+	font-family: "system", sans-serif;
+}
+
+body {
+	font-size: 1rem;
+	color: hsl(186, 8%, 55%);
+}
+
+a {
+	color: hsl(45, 100%, 35%);
+	text-decoration: none;
+	border-bottom: 0.1em solid hsl(175, 59%, 40%);
+	padding: 0.1em 0.2em 0;
+	margin: -0.1em -0.2em 0;
+	transition: background-color 0.2s;
+}
+
+a:hover {
+	background-color: hsla(175, 59%, 40%, 0.1);
+}
+
+a:active {
+	background-color: hsla(175, 59%, 40%, 0.3);
+	transition-duration: 0s;
+}
+
+a[href="#0"] {
+	border-bottom: 0.1em dotted hsl(194, 100%, 40%);
+}
+
+/*=================
+	Header
+=================*/
+
+.site-header-id {
+	max-width: 50rem;
+	margin: 0 auto;
+	min-height: 4rem;
+	padding: 1rem 0;
+}
+
+.id-section {
+	display: flex;
+}
+
+.site-header-banner {
+	height: 16rem;
+	width: 100%;
+	margin: 0 auto;
+	background-color: hsl(195, 82%, 15%);
+	position:relative;
+}
+
+#mySketch {
+	width: 100%;
+	height: 100%;
+}
+
+/*=================
+	MAIN
+=================*/
+
+main {
+	min-height: calc(100vh - 250px - 8rem);
+}
+
+.main-section {
+	width: 100%;
+	max-width: 50rem;
+	margin: 0 auto;
+	display: flex;
+	flex-flow: wrap;
+	align-items: baseline;
+}
+
+.portal-column {
+	width: calc((50rem / 3) - 0.75rem);
+	height: 100%;
+	padding: 1rem;
+}
+
+.portal-column:not(:last-child) {
+	margin-right: 1rem;
+}
+
+.portal-nav ul {
+	list-style: none;
+}
+
+.portal-nav li {
+	margin-bottom: 0.5em;
+} 
+
+/*=================
+	FOOTER
+=================*/
+
+.site-footer {
+	width: 100%;
+	min-height: 4rem;
+	padding: 1rem;
+}
+
+.footer-section {
+	display: flex;
+	justify-content: center;
+}
+
+.site-footer a {
+	margin: 0 1rem;
+}

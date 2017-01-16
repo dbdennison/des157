@@ -2,7 +2,7 @@ module.exports = {
 
   main: {
 	files: [
-		{expand: true, cwd: 'src/img', src: ['**'], dest: 'dist/img'},
+		{expand: true, cwd: 'src', src: ['**'], dest: 'dist'},
 	]
   }
 
