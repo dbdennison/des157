@@ -12,7 +12,7 @@ for (var i = 0; i < canvas.width / rectWidth; i++)
 
 canvas.onmousemove = function(eventUpdate) {
 
-	//get the x,y of the cursor relative to the canvas
+	//get the coords of the cursor relative to the canvas
 	var rect = this.getBoundingClientRect(),
 		x = eventUpdate.clientX - rect.left,
 		y = eventUpdate.clientY - rect.top,
