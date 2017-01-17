@@ -17,15 +17,12 @@ canvas.onmousemove = function(eventUpdate) {
 		x = eventUpdate.clientX - rect.left,
 		y = eventUpdate.clientY - rect.top,
 		i = 0, r;
-  
-	//create drawing context
-	ctx.clearRect(0, 0, canvas.width, canvas.height);
 	
 	//iterate through rects to draw each item
 	while(r = rects[i++]) {
 		ctx.beginPath();
 		ctx.rect(r.x, r.y, r.w, r.h);
-		
+
 		//check cursor for overlap of an element and set its fill
 		ctx.fillStyle = ctx.isPointInPath(x, y) ? "hsl(195, 82%, 9%)" : "hsl(195, 82%, 15%)";
 		ctx.fill();
