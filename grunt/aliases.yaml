@@ -6,7 +6,7 @@ dev:
   description: 'full build of all tasks'
   tasks:
     - 'clean'
-    - copy
+    - 'copy'
 prod:
   description: 'full build of all tasks'
   tasks:

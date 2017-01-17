@@ -5,7 +5,19 @@
 			"path": "src"
 		},
 		{
-			"path": "dist"
+			"path": "dist/css"
+		},
+		{
+			"path": "dist/img"
+		},
+		{
+			"path": "dist/scripts"
+		},
+		{
+			"path": "dist/index.html"
+		},
+		{
+			"path": "dist/blog"
 		},
 	]
 }
