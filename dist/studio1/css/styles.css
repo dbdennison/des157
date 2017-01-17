@@ -148,6 +148,11 @@ main {
 
 figure {
 	text-align: center;
+	max-width: 100%;
+}
+
+img {
+	max-width: 100%;
 }
 
 @media (max-width: 50rem){
