@@ -88,7 +88,7 @@ p {
 .site-header-id {
 	max-width: 50rem;
 	margin: 0 auto;
-	min-height: 4rem;
+	height: 4rem;
 	padding: 1rem 0;
 	display: flex;
 	justify-content: space-between;
@@ -115,7 +115,7 @@ canvas {
 =================*/
 
 main {
-	min-height: calc(100vh - 17rem - 8rem);
+	min-height: calc(100vh - 16rem - 8rem);
 }
 
 .main-section {
