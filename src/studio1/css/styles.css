@@ -120,7 +120,7 @@ canvas {
 =================*/
 
 main {
-	min-height: calc(100vh - 16rem - 8rem);
+	min-height: calc(100vh - 16rem - 10rem);
 }
 
 .main-section {
