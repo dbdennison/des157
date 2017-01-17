@@ -28,3 +28,5 @@ canvas.onmousemove = function(eventUpdate) {
 		ctx.fill();
 	}
 };
+
+//todo: add onResize function to update rects
