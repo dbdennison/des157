@@ -94,8 +94,15 @@ p {
 	justify-content: space-between;
 }
 
-.logo-wrapper {
+.site-header-id h1 {
+	display: inline-block;
+}
+
+.site-header-id a {
 	display: flex;
+	border-bottom: none;
+	padding: 1rem;
+	margin: -1rem;
 }
 
 .logo {

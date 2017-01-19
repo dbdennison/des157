@@ -1,16 +1,22 @@
 var canvas = document.getElementById("banner"),
-    ctx = canvas.getContext("2d"),
-    rects = [],
-    rectWidth = 32,
-    i, r;
-    canvas.width = canvas.offsetWidth;
-	canvas.height = canvas.offsetHeight;
+	ctx = canvas.getContext("2d"),
+	i, r;
+const rectWidth = 32;
+
+window.onload = setup;
+window.onresize = setup;
+canvas.onmousemove = draw;
 
 //fill rects with shapes depending on the size of the canvas
-for (var i = 0; i < canvas.width / rectWidth; i++)
-	rects.push({x: i * rectWidth, y: 0, w: rectWidth, h: canvas.height});
+function setup(){
+	rects = [];
+	canvas.width = canvas.offsetWidth;
+	canvas.height = canvas.offsetHeight;
+	for (var i = 0; i < canvas.width / rectWidth; i++)
+		rects.push({x: i * rectWidth, y: 0, w: rectWidth, h: canvas.height});
+}
 
-canvas.onmousemove = function(eventUpdate) {
+function draw(eventUpdate) {
 
 	//get the coords of the cursor relative to the canvas
 	var rect = this.getBoundingClientRect(),
@@ -28,5 +34,3 @@ canvas.onmousemove = function(eventUpdate) {
 		ctx.fill();
 	}
 };
-
-//todo: add onResize function to update rects
