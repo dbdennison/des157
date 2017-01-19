@@ -19,5 +19,8 @@
 		{
 			"path": "dist/blog"
 		},
+		{
+			"path": "dist/project"
+		},
 	]
 }
