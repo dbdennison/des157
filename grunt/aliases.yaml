@@ -9,6 +9,7 @@ dev:
     - 'copy'
     - 'copy:cname'
     - 'copy:studio1'
+    - 'htmlbuild'
 serve:
   description: 'build and min css'
   tasks:

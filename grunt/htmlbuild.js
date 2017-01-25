@@ -1,18 +1,16 @@
 module.exports = {
 	dist: {
-		src: 'src/html/**/index.html',
+		src: ['dist/**/*.html'],
 		dest: 'dist/',
 			options: {
 				beautify: true,
 				relative: true,
-				basePath: 'src/html/',
+				basePath: 'dist/',
 				sections: {
 					layout: {
-							siteheader: 'src/layout/site-header.html',
-							sitefooter: 'src/layout/site-footer.html',
-							sitesvg: 'src/layout/site-svg.html',
-							sitehead: 'src/layout/site-head.html',
-							ariabutton: 'src/layout/script-ariabutton.html',
+							siteheader: 'src/layout/portal-header.html',
+							sitefooter: 'src/layout/portal-footer.html',
+							sitehead: 'src/layout/portal-head.html',
 						}
 				},
 				data: {
