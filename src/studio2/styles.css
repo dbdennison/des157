@@ -1,0 +1,138 @@
+/*=================
+	CORE
+=================*/
+
+html {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.color {
+  color: currentColor;
+}
+
+.bg-color {
+  background-color: currentColor;
+}
+
+
+/*=================
+	TYPOGRAPHY
+=================*/
+
+@font-face {
+  font-family: system;
+  font-style: normal;
+  font-weight: 300;
+  src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Segoe UI Light"), local("Ubuntu Condensed"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+}
+
+.body-font, body {
+  font-family: "system", sans-serif;
+}
+
+body {
+  font-size: 1rem;
+  color: hsl(0, 0%, 20%);
+}
+
+a {
+  color: hsl(175, 59%, 40%);
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 0.1em solid hsl(175, 59%, 40%);
+  padding: 0.1em 0.2em 0;
+  margin: -0.1em -0.2em 0;
+  transition: background-color 0.2s;
+}
+
+a:hover {
+  background-color: hsla(175, 59%, 40%, 0.1);
+}
+
+a:active {
+  background-color: hsla(175, 59%, 40%, 0.3);
+  transition-duration: 0s;
+}
+
+a[href="#0"] {
+  border-bottom: 0.1em dotted hsl(194, 100%, 40%);
+}
+
+p, .body-type {
+  font-size: 1.15rem;
+  line-height: 1.3em;
+  text-indent: 0em;
+}
+
+p {
+  padding-bottom: 1.5em;
+}
+
+
+/*=================
+	MAIN
+=================*/
+
+main {}
+
+
+/*=================
+	FORM
+=================*/
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="number"], textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  background: none;
+  border: none;
+  border-bottom: 0.1em solid currentColor;
+  border-radius: 0.1em;
+  margin: 1.5rem 0 1rem 0;
+  color: currentColor;
+}
+
+.main-form {
+  width: 100%;
+  height: 100%;
+}
+
+.form-text {
+  width: 10rem;
+}
+
+.option-input {
+  display: flex;
+  align-items: baseline;
+}
+
+.option-label {
+  order: -1;
+  margin-right: 1em;
+}
+
+
+/*=================
+	MAP
+=================*/
+
+.main-map {
+  display: none;
+  width: 100%;
+  height: 100%;
+}

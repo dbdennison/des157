@@ -4,23 +4,5 @@
 		{
 			"path": "src"
 		},
-		{
-			"path": "dist/css"
-		},
-		{
-			"path": "dist/img"
-		},
-		{
-			"path": "dist/scripts"
-		},
-		{
-			"path": "dist/index.html"
-		},
-		{
-			"path": "dist/blog"
-		},
-		{
-			"path": "dist/project"
-		},
 	]
 }
