@@ -16,6 +16,7 @@ html {
 
 body {
   min-height: 100vh;
+  background-color: hsl(0, 0%, 0%);
 }
 
 .color {
@@ -26,6 +27,11 @@ body {
   background-color: currentColor;
 }
 
+.hidden {
+  visibility: none !important;
+  opacity: 0 !important;
+  pointer-events: none;
+}
 
 /*=================
 	TYPOGRAPHY
@@ -44,7 +50,7 @@ body {
 
 body {
   font-size: 1rem;
-  color: hsl(0, 0%, 20%);
+  color: hsl(0, 0%, 80%);
 }
 
 a {
@@ -85,12 +91,19 @@ p {
 	MAIN
 =================*/
 
-main {}
+main {
+  max-width: 50rem;
+  margin: 0 auto;
+}
 
 
 /*=================
 	FORM
 =================*/
+
+.form-hidden {
+  transform: translateY(-100%);
+}
 
 input[type="text"], input[type="email"], input[type="tel"], input[type="number"], textarea {
   -webkit-appearance: none;
@@ -101,19 +114,24 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="number"]
   box-shadow: none;
   background: none;
   border: none;
-  border-bottom: 0.1em solid currentColor;
-  border-radius: 0.1em;
-  margin: 1.5rem 0 1rem 0;
+  background-color: hsla(0, 0%, 100%, 0.2);
+  padding: 0.5rem;
+  border-bottom: 0.1em hsl(0, 0%, 10%);
+  border-radius: 0.25em;
+  margin: 0.5rem 0 1rem 0;
   color: currentColor;
+  text-align: right;
 }
 
 .main-form {
+  z-index: 10;
   width: 100%;
   height: 100%;
+  transition: transform 0.3s linear;
 }
 
 .form-text {
-  width: 10rem;
+  flex-grow: 1;
 }
 
 .option-input {
@@ -132,7 +150,14 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="number"]
 =================*/
 
 .main-map {
-  display: none;
+  z-index: 9;
+  display: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
+  background-color: hsl(0, 0%, 25%);
+  opacity: 1;
+  transition: opacity 0.3s linear;
 }
