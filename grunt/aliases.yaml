@@ -15,3 +15,7 @@ serve:
   tasks:
     - connect
     - watch
+publish:
+  description: 'push compiled site from master to gh-pages'
+  tasks:
+    - 'shell:publish'
