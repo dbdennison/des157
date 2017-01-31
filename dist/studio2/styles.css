@@ -101,8 +101,36 @@ main {
 	FORM
 =================*/
 
+.form-wrapper {
+  perspective: 30rem;
+}
+
 .form-hidden {
-  transform: translateY(-100%);
+  transform: rotateX(2160deg);
+  opacity: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.option-buttons {
+  padding: 2em;
+  transition: all 1s linear;
+}
+
+.option-buttons:hover {
+  position: absolute;
+  transform: scale(7) translateX(20rem);
+  transition: all 5s linear;
+}
+
+.main-form {
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  transition: all 1.5s;
+  display: flex;
+  flex-flow: column;
+  perspective: 30rem;
 }
 
 input[type="text"], input[type="email"], input[type="tel"], input[type="number"], textarea {
@@ -112,31 +140,38 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="number"]
   appearance: none;
   outline: 0;
   box-shadow: none;
-  background: none;
   border: none;
-  background-color: hsla(0, 0%, 100%, 0.2);
   padding: 0.5rem;
-  border-bottom: 0.1em hsl(0, 0%, 10%);
+  border-bottom: 0.2em solid hsla(0, 0%, 100%, 0.25);
   border-radius: 0.25em;
   margin: 0.5rem 0 1rem 0;
   color: currentColor;
   text-align: right;
 }
 
-.main-form {
-  z-index: 10;
+.option-input {
   width: 100%;
-  height: 100%;
-  transition: transform 0.3s linear;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
 }
 
 .form-text {
   flex-grow: 1;
+  background-color: hsla(0, 0%, 100%, 0.1);
+  transition: background 0.3s;
 }
 
-.option-input {
-  display: flex;
-  align-items: baseline;
+.form-text:focus {
+  background-color: hsla(0, 0%, 100%, 0.25);
+}
+
+.form-text:valid {
+  border-bottom: 0.2em solid hsla(154,68%,55%,1);
+}
+
+.form-text:valid + .option-label {
+  color: hsla(154,68%,55%,1);
 }
 
 .option-label {
@@ -151,13 +186,48 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="number"]
 
 .main-map {
   z-index: 9;
-  display: inherit;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: hsl(0, 0%, 25%);
+  background-color: hsl(0, 0%, 100%);
+  color: black;
   opacity: 1;
-  transition: opacity 0.3s linear;
+  transition: opacity 2s linear;
+}
+
+.svg-map {
+  display: block;
+  width: 50rem;
+  width: 100%;
+  max-width: 100vw;
+  max-height: 100vh;
+  min-height: 100%;
+  /*background: url(img/cal_bathy_grad.png) no-repeat center center fixed;
+  background-size: cover;*/
+}
+
+.map-trail {
+  transition: stroke-dasharray 20s linear;
+  stroke: red;
+  stroke-width: 0.2rem;
+  stroke-dasharray: 0, 3198.731;
+  stroke-dashoffset: 0;
+}
+
+.map-trail-active {
+  stroke-dasharray: 3198.731, 3198.731;
+}
+
+.guide {
+  flex-grow: 1;
+  max-width: 27rem;
+  padding: 1rem 2rem 0;
+  border-left: 0.2rem solid black;
+  display: flex;
+  align-items: center;
 }
