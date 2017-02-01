@@ -27,6 +27,13 @@ body {
 	background-color: currentColor;
 }
 
+hr {
+	margin: 1em 0;
+	background-color: currentColor;
+	border: 0;
+	height: 0.1em;
+}
+
 /*=================
 	TYPOGRAPHY
 =================*/
