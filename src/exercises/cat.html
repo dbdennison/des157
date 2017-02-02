@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Derek Dennison | DES157-W17</title>
+	<link rel="icon" type="image/png" href="/favicon.ico">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+	<link type="text/css" rel="stylesheet" href="/css/styles.css" />
+	<link type="text/css" rel="stylesheet" href="cat.css" />
+</head>
+
+<body>
+	<header class="site-header">
+		<section class="site-header-id">
+			<a href="/"><img src="/img/dd.svg" class="logo" alt="DD logo"><h1>Derek Dennison</h1></a>
+		</section>
+	</header>
+	<main>
+		<section class="main-section">
+			<h1>Chapter 13 - The Cat's Hat</h1>
+		</section>
+		<div class="cat-container">
+			<div class="cat"><div class="hat"></div></div>
+		</div>
+	</main>
+	<script type="text/javascript">
+		let cat = document.querySelector(".cat");
+		let angle = 0, lastTime = null;
+		function animate(time) {
+			if (lastTime != null)
+				angle += (time - lastTime) * 0.001;
+			lastTime = time;
+			cat.style.top = (Math.sin(angle) * 20) + "px";
+			cat.style.left = (Math.cos(angle) * 200 + "px");
+			requestAnimationFrame(animate);
+		}
+		requestAnimationFrame(animate);
+	</script>
+	<script src="//localhost:35729/livereload.js"></script>
+</body>
+</html>
