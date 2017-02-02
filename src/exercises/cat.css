@@ -26,7 +26,6 @@
   height: 1rem;
   top: -1.5rem;
   background-color: red;
-  transition: transform 1s linear;
-  animation: spin 1.5s linear infinite;
+  animation: spin 2s linear infinite;
   /*top: 20px;*/
 }
