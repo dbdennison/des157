@@ -55,26 +55,26 @@ body {
 	color: hsl(186, 8%, 60%);
 }
 
-a {
+a[href]:not([class]) {
 	color: hsl(175, 59%, 40%);
 	font-weight: bold;
 	text-decoration: none;
 	border-bottom: 0.1em solid hsl(175, 59%, 40%);
-	padding: 0.1em 0.2em 0;
-	margin: -0.1em -0.2em 0;
+	/*padding: 0.1em 0.2em 0;*/
+	/*margin: -0.1em -0.2em 0;*/
 	transition: background-color 0.2s;
 }
 
-a:hover {
+a[href]:not([class]):hover {
 	background-color: hsla(175, 59%, 40%, 0.1);
 }
 
-a:active {
+a[href]:not([class]):active {
 	background-color: hsla(175, 59%, 40%, 0.3);
 	transition-duration: 0s;
 }
 
-a[href="#0"] {
+a[href="#0"]:not([class]) {
 	border-bottom: 0.1em dotted hsl(194, 100%, 40%);
 }
 
@@ -109,11 +109,18 @@ h2 {
 	display: inline-block;
 }
 
-.site-header-id a {
+.header-logo {
+	color: hsl(175, 59%, 40%);
+	text-decoration: none;
 	display: flex;
 	border-bottom: none;
 	padding: 1rem;
 	margin: -1rem;
+}
+
+.header-logo:hover {
+	transition: background-color 0.2s;
+	background-color: hsla(175, 59%, 40%, 0.1);
 }
 
 .logo {
