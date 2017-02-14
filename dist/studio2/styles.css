@@ -150,7 +150,7 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="number"]
 
 .form-text {
   flex-grow: 1;
-  background-color: hsla(0, 0%, 100%, 0.1);
+  background-color: hsla(0, 0%, 100%, 0);
   transition: background 0.3s;
 }
 
@@ -207,12 +207,12 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="number"]
   transition: stroke-dasharray 20s linear;
   stroke: red;
   stroke-width: 0.2rem;
-  stroke-dasharray: 0, 3198.731;
+  stroke-dasharray: 0, 3198.731px;
   stroke-dashoffset: 0;
 }
 
 .map-trail-active {
-  stroke-dasharray: 3198.731, 3198.731;
+  stroke-dasharray: 3198.731px, 3198.731px;
 }
 
 .guide {

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="50px" height="50px" viewBox="304.96 304.957 50 50" style="enable-background:new 304.96 304.957 50 50;"
+	 xml:space="preserve">
+<g id="voy-main">
+	<g id="voy-orbits">
+		<circle style="fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;" cx="329.958" cy="329.957" r="327.958"/>
+		<circle style="fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;" cx="329.958" cy="329.957" r="202.667"/>
+		<circle style="fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;" cx="329.956" cy="329.957" r="103"/>
+		<circle style="fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;" cx="329.958" cy="329.957" r="55"/>
+		<circle style="fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;" cx="329.958" cy="329.958" r="12.333"/>
+		<circle cx="329.957" cy="329.957" r="1"/>
+	</g>
+	<g id="voy-points">
+		<circle cx="336.555" cy="319.625" r="2"/>
+		<circle cx="326.805" cy="317.896" r="2"/>
+		<circle cx="284.055" cy="359.562" r="2"/>
+		<circle cx="295.055" cy="371.562" r="2"/>
+		<circle cx="351.555" cy="429.228" r="2"/>
+		<circle cx="331.472" cy="432.894" r="2"/>
+		<circle cx="526.389" cy="372.728" r="2"/>
+		<circle cx="648.889" cy="256.061" r="2"/>
+	</g>
+	<g id="voy-path">
+		<g id="voy-path-1">
+			<path style="fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;" d="M642.189,503.347
+				c-52.812-7.924-165.051-27.703-165.051-27.703c-61-14-108.75-21.25-145-43c-34.464-20.679-54.19-49.439-47.715-77.249
+				c13.215-56.75,42.907-37.487,42.907-37.487"/>
+			<polygon points="638.241,495.713 664.098,506.609 636.257,510.104 			"/>
+		</g>
+		<g id="voy-path-2">
+			<path style="fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;stroke-dasharray:35,8;" d="M337.107,319.915
+				c0,0-11.301-10.055-22.221-5.135c-17.445,7.859-34.881,37.07-10.998,79.365c34.417,57.082,94.251,30.166,155.584,6.166
+				c58.979-23.078,117.036-29.205,213.442-180.375"/>
+			<polygon points="676.033,227.769 684.385,200.983 663.757,220.005 			"/>
+		</g>
+	</g>
+	<g style="display:none;">
+		<path style="display:inline;" d="M592.639,328.894l32.5-8l-2-4l-30.5,5.5c-4.25-9.5-8.25-5.5-8.25-5.5h-7.854v-5.125
+			c3.647-0.375,5.354-1.375,6.354-5.125s2.75-4.5,2.75-4.5l-4-4.5c-6.5,4.75-9,4.75-9,4.75l-1.205,4.25
+			c-8.955,4.25-2.795,5.75-2.795,5.75l-0.75,4.5c0,0-14-4-4.75,17c0.336,0.763,0.673,1.472,1.01,2.151l-2.76,2.599v2l5.063-0.533
+			c8.146,12.404,15.832,4.345,16.438,6.283c1.25,4,5,5.75,5.5,4.067c0.5-1.682,1.25-0.817,4.25-1.431l5.25,5.361l2.25-2.5
+			l-2.25-2.861h4.5v-2.889l-15.25-9.5C590.139,334.645,592.639,328.894,592.639,328.894z"/>
+		<path style="display:inline;" d="M547.139,484.395l32.5-8l-2-4l-30.5,5.5c-4.25-9.5-8.25-5.5-8.25-5.5h-7.854v-5.125
+			c3.647-0.375,5.354-1.375,6.354-5.125s2.75-4.5,2.75-4.5l-4-4.5c-6.5,4.75-9,4.75-9,4.75l-1.205,4.25
+			c-8.955,4.25-2.795,5.75-2.795,5.75l-0.75,4.5c0,0-14-4-4.75,17c0.336,0.763,0.673,1.472,1.01,2.151l-2.76,2.599v2l5.063-0.533
+			c8.146,12.404,15.832,4.345,16.438,6.283c1.25,4,5,5.75,5.5,4.067c0.5-1.682,1.25-0.817,4.25-1.431l5.25,5.361l2.25-2.5
+			l-2.25-2.861h4.5v-2.889l-15.25-9.5C544.639,490.145,547.139,484.395,547.139,484.395z"/>
+	</g>
+	<g id="voy-labels_4_">
+		<g id="voy-labels-orbits">
+			<text transform="matrix(1 0 0 1 343.4612 329.9585)" style="font-family:'HelveticaNeueLTStd-Roman'; font-size:12;">Earth</text>
+			<text transform="matrix(1 0 0 1 386.2947 329.9585)" style="font-family:'HelveticaNeueLTStd-Roman'; font-size:12;">Jupiter</text>
+			<text transform="matrix(1 0 0 1 435.6926 329.9585)" style="font-family:'HelveticaNeueLTStd-Roman'; font-size:12;">Saturn</text>
+			<text transform="matrix(1 0 0 1 536.3586 329.9585)" style="font-family:'HelveticaNeueLTStd-Roman'; font-size:12;">Uranus</text>
+			<text transform="matrix(1 0 0 1 661.0247 329.9585)" style="font-family:'HelveticaNeueLTStd-Roman'; font-size:12;">Neptune</text>
+		</g>
+		<g id="voy-labels-points">
+			<text transform="matrix(1 0 0 1 297.9729 371.4971)" style="font-family:'HelveticaNeueLTStd-Roman'; font-size:12;">Jupiter - July 9, 1979</text>
+			<text transform="matrix(1 0 0 1 154.8083 359.3477)" style="font-family:'HelveticaNeueLTStd-Roman'; font-size:12;">Jupiter - March 5, 1979</text>
+			<text transform="matrix(1 0 0 1 175.4963 432.8936)" style="font-family:'HelveticaNeueLTStd-Roman'; font-size:12;">Saturn - November 12, 1980</text>
+			<text transform="matrix(1 0 0 1 355.1389 429.2275)" style="font-family:'HelveticaNeueLTStd-Roman'; font-size:12;">Saturn - August 25, 1981</text>
+			<text transform="matrix(1 0 0 1 530.137 372.7275)" style="font-family:'HelveticaNeueLTStd-Roman'; font-size:12;">Uranus - January 24, 1986</text>
+			<text transform="matrix(1 0 0 1 652.262 256.061)" style="font-family:'HelveticaNeueLTStd-Roman'; font-size:12;">Neptune - August 25, 1989</text>
+			<text transform="matrix(1 0 0 1 159.2898 317.625)" style="font-family:'HelveticaNeueLTStd-Roman'; font-size:12;">Voyager 1 - September 5 1977</text>
+			<text transform="matrix(1 0 0 1 339.762 319.625)" style="font-family:'HelveticaNeueLTStd-Roman'; font-size:12;">Voyager 2 - August 20, 1977</text>
+		</g>
+	</g>
+</g>
+</svg>

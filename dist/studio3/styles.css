@@ -1,0 +1,153 @@
+/*=================
+	CORE
+=================*/
+
+html {
+	height: 100%;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+body {
+	background-color: hsl(195, 82%, 9%);
+	min-height: 100vh;
+}
+
+/*=================
+	TYPOGRAPHY
+=================*/
+
+@font-face {
+	font-family: system;
+	font-style: normal;
+	font-weight: 300;
+	src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Segoe UI Light"), local("Ubuntu Condensed"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+}
+
+.body-font,
+body {
+	font-family: "system", sans-serif;
+}
+
+body {
+	font-size: 1rem;
+	color: hsl(186, 8%, 60%);
+}
+
+a[href]:not([class]) {
+	color: hsl(175, 59%, 40%);
+	font-weight: bold;
+	text-decoration: none;
+	border-bottom: 0.1em solid hsl(175, 59%, 40%);
+	/*padding: 0.1em 0.2em 0;*/
+	/*margin: -0.1em -0.2em 0;*/
+	transition: background-color 0.2s;
+}
+
+a[href]:not([class]):hover {
+	background-color: hsla(175, 59%, 40%, 0.1);
+}
+
+a[href]:not([class]):active {
+	background-color: hsla(175, 59%, 40%, 0.3);
+	transition-duration: 0s;
+}
+
+a[href="#0"]:not([class]) {
+	border-bottom: 0.1em dotted hsl(194, 100%, 40%);
+}
+
+p, .body-type {
+	font-size: 1.15rem;
+	line-height: 1.3em;
+	text-indent: 0em;
+}
+
+p {
+	padding-bottom: 1.5em;
+}
+
+h2 {
+	padding-top: 2rem;
+}
+
+/*=================
+	MAIN
+=================*/
+
+.main-section {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 60rem;
+}
+
+/*=================
+	CARDS
+=================*/
+
+.card-container {
+  position: relative;
+  width: 25rem;
+  height: 25rem;
+  margin: 1rem;
+  perspective: 32rem;
+}
+
+.card-container:hover .card, .card-container:focus .card, .card-container:active .card {
+  transform: rotateY(180deg);
+}
+
+.card {
+  -moz-transform-style: preserve-3d;
+  transition: transform 0.3s ease;
+  width: 100%;
+  height: 100%;
+}
+
+.face {
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    text-align: center;
+    padding: 1rem;
+}
+
+.front {
+  backface-visibility: hidden;
+  background-color: hsl(210,51%,51%);
+  z-index: 10;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container:hover .front {
+    z-index: 0;
+}
+
+.back {
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    background-color: hsl(209,37%,37%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
