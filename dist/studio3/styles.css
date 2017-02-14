@@ -15,7 +15,7 @@ html {
 }
 
 body {
-	background-color: hsl(195, 82%, 9%);
+	background-color: hsl(0, 0%, 0%);
 	min-height: 100vh;
 }
 
@@ -113,14 +113,10 @@ h2 {
 }
 
 .face {
-    position: absolute;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
-    -o-backface-visibility: hidden;
-    backface-visibility: hidden;
-    text-align: center;
-    padding: 1rem;
+  position: absolute;
+  backface-visibility: hidden;
+  text-align: center;
+  padding: 1rem;
 }
 
 .front {
@@ -136,12 +132,11 @@ h2 {
 }
 
 .card-container:hover .front {
-    z-index: 0;
+    z-index: -1;
 }
 
 .back {
     transform: rotateY(180deg);
-    backface-visibility: hidden;
     background-color: hsl(209,37%,37%);
     position: absolute;
     width: 100%;
@@ -150,4 +145,39 @@ h2 {
     justify-content: center;
     align-items: center;
     text-align: left;
+}
+
+.multitool div {
+	background: url(img/multitool.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.pen div {
+	background: url(img/pen.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.wallet div {
+	background: url(img/wallet.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.phone div {
+	background: url(img/phone.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.watch div {
+	background: url(img/watch.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
 }
