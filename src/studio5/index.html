@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Derek Dennison | DES157-W17</title>
+
+<link type="text/css" rel="stylesheet" href="styles.css"/>
+
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+<script src='https://api.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.css' rel='stylesheet' />
+</head>
+
+<body>
+	<main>
+		<div class="map-container">
+			<div id='map'></div>
+			<aside class="map-menu">
+				<section class="map-menu-style">
+					<input id='streets' type='radio' name='rtoggle' value='streets' onclick="changeStyle()">
+					<label for='streets' onclick="changeStyle()">streets</label>
+					<input id='dark' type='radio' name='rtoggle' value='dark' onclick="changeStyle()">
+					<label for='dark' onclick="changeStyle()">dark</label>
+					<input id='satellite' type='radio' name='rtoggle' value='satellite' onclick="changeStyle()">
+					<label for='satellite' onclick="changeStyle()">satellite</label>
+				</section>
+			</aside>
+		</div>
+	</main>
+	<!-- build:section layout.sitefooter -->
+	<!-- /build -->
+	<script src="main.js"></script>
+</body>
+</html>
