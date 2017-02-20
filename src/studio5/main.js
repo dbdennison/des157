@@ -6,8 +6,8 @@ var map = new mapboxgl.Map({
 	zoom: 14,
 });
 
-map.on('load', function() {
-	map.addLayer({
+map.on('style.load', function() {
+	/*map.addLayer({
 		id: 'terrain-data',
 		type: 'line',
 		source: {
@@ -15,7 +15,7 @@ map.on('load', function() {
 			url: 'mapbox://mapbox.mapbox-terrain-v2'
 		},
 		'source-layer': 'contour'
-	});
+	});*/
 
 	map.addSource("markers", {
 		"type": "geojson",
