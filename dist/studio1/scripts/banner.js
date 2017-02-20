@@ -1,6 +1,6 @@
-var canvas = document.getElementById("banner"),
+let canvas = document.getElementById("banner"),
 	ctx = canvas.getContext("2d"),
-	i, r;
+	rects = [];
 const rectWidth = 32;
 
 window.onload = setup;
@@ -33,4 +33,4 @@ function draw(eventUpdate) {
 		ctx.fillStyle = ctx.isPointInPath(x, y) ? "hsl(195, 82%, 9%)" : "hsl(195, 82%, 15%)";
 		ctx.fill();
 	}
-};
+}
