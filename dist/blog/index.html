@@ -30,9 +30,26 @@
         <section class="main-section blog-main">
             <h1>Blog</h1>
             <article class="blog-entry">
+                <h2>SVG Filters</h2><time datetime="2017-03-01">March 1, 2017</time>
+                <p>SVG filters are a very neat feature… that have rather poor documentation/knowledge base. They can be used to process images in real time, such as applying a gradient map through color matrixes or rendering lighting effects onto 2D objects.
+                    Here I’ve applied a diffuselighting filter with a directional light to generate a hillshade effect on a cleantopo bathymetry dataset, after much trial and error.</p>
+                <figure>
+                    <img src="img/hillshade_bathy.jpg">
+                    <figcaption>Bathymetry Hillshade</figcaption>
+                </figure>
+                <p>This research was done for Adam’s zen garden demo, where the lighting effects may help alleviate the complex and performance heavy particle based approach. Excuse the placeholder art!</p>
+                <figure>
+                    <img src="img/hillshade_sand.jpg">
+                    <figcaption>Sandy Hillshade</figcaption>
+                </figure>
+                <a href="/misc/svg/">Live demo.</a>
+            </article>
+            <hr/>
+            <article class="blog-entry">
                 <h2>Studio 5 - Mapbox GL</h2><time datetime="2017-02-20">Februaru 20, 2017</time>
-                <p>Mapbox is a library and service for authoring GIS interfaces on the web, with this newest library utilizing modern, hardware accelerated WebGL rendering. It provides a very robust API and extensive documentation for effectively working
-                    with it – getting a “hello world” out of it took just a few minutes. Further, performance was excellent wherever I could test it, and it appears to be very extensible for supporting any specific requirements.</p>
+                <p><a href="https://www.mapbox.com/mapbox-gl-js/api/">Mapbox</a> is a library and service for authoring GIS interfaces on the web, with this newest library utilizing modern, hardware accelerated WebGL rendering. It provides a very robust
+                    API and extensive documentation for effectively working with it – getting a “hello world” out of it took just a few minutes. Further, performance was excellent wherever I could test it, and it appears to be very extensible for supporting
+                    any specific requirements.</p>
                 <figure>
                     <img src="img/mapbox.png">
                     <figcaption>Studio 5 - Mapbox GL</figcaption>

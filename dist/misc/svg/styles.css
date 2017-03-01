@@ -1,0 +1,235 @@
+/*=================
+	CORE
+=================*/
+
+html {
+	height: 100%;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+body {
+	background-color: hsl(195, 82%, 4%);
+	min-height: 100vh;
+}
+
+/*=================
+	TYPOGRAPHY
+=================*/
+
+@font-face {
+	font-family: system;
+	font-style: normal;
+	font-weight: 300;
+	src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Segoe UI Light"), local("Ubuntu Condensed"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+}
+
+.body-font,
+body {
+	font-family: "system", sans-serif;
+}
+
+body {
+	font-size: 1rem;
+	color: hsl(186, 8%, 60%);
+}
+
+a[href]:not([class]) {
+	color: hsl(175, 59%, 40%);
+	font-weight: bold;
+	text-decoration: none;
+	border-bottom: 0.1em solid hsl(175, 59%, 40%);
+	/*padding: 0.1em 0.2em 0;*/
+	/*margin: -0.1em -0.2em 0;*/
+	transition: background-color 0.2s;
+}
+
+a[href]:not([class]):hover {
+	background-color: hsla(175, 59%, 40%, 0.1);
+}
+
+a[href]:not([class]):active {
+	background-color: hsla(175, 59%, 40%, 0.3);
+	transition-duration: 0s;
+}
+
+a[href="#0"]:not([class]) {
+	border-bottom: 0.1em dotted hsl(194, 100%, 40%);
+}
+
+p, .body-type {
+	font-size: 1.15rem;
+	line-height: 1.3em;
+	text-indent: 0em;
+}
+
+p {
+	padding-bottom: 1.5em;
+}
+
+h2 {
+	padding-top: 2rem;
+}
+
+.voy-labels-points {
+	text-shadow: 0.33em 0.33em 2em black;
+}
+
+/*=================
+	MAIN
+=================*/
+
+.main {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+	align-items: center;
+  max-width: 60rem;
+}
+
+button {
+	appearance: none;
+	border: 0;
+	background: hsla(205, 69%, 49%, 1);
+	color: #fff;
+	font-size: 2rem;
+	padding: 0.4em 0.8em;
+	border-radius: 0.2em;
+	transition: all 0.1s ease;
+}
+
+button:hover, button:active {
+	background: hsla(205, 69%, 40%, 1);
+}
+
+.next {
+	position: fixed;
+	bottom: 1rem;
+	right: 1rem;
+}
+
+/*=================
+	VOYAGER
+=================*/
+
+.voy-svg {
+	width: 100%;
+	height: 100%;
+	font-size: 1pt;
+	color: #fff;
+	/*transform: scale(2);*/
+}
+
+.voy-main {
+	transform: scale(1);
+	transform-origin: 25px 25px;
+	transition: all 2s ease;
+	font-size: 1em;
+}
+
+.voy-main-1 {
+	transform: scale(0.4);
+	font-size: 2.5em;
+}
+
+.voy-main-2 {
+	transform: scale(0.2);
+	font-size: 5em;
+}
+
+.voy-main-3 {
+	transform: scale(0.1);
+	/*font-size: 10em;*/
+	font-size: 8em;
+}
+
+.voy-main-3 {
+	transform: scale(0.06);
+	/*font-size: 16.666em;*/
+	font-size: 8em;
+}
+
+.voy-orbits {
+	fill:none;
+	stroke:#000000;
+	stroke-width: 0.5px;
+	stroke-miterlimit:10;
+}
+
+.voy-path-1 {
+	fill:none;
+	stroke: #93A1A1;
+	stroke-width: 1px;
+	stroke-miterlimit: 10;
+	stroke-dasharray: 0 483.583px;
+	stroke-dashoffset: 0;
+	transition: stroke-dasharray 16s ease;
+}
+
+.voy-path-1-j {
+	stroke-dasharray: 71.656px 483.583px;
+}
+
+.voy-path-1-s {
+	stroke-dasharray: 164.349px 483.583px;
+}
+
+.voy-path-1-o {
+	stroke-dasharray: 483.583px 483.583px;
+}
+
+.voy-path-2 {
+	fill:none;
+	stroke: #657B83;
+	stroke-width: 1px;
+	stroke-miterlimit:10;
+	stroke-dasharray: 0 573.647px;
+	stroke-dashoffset: 0;
+	transition: stroke-dasharray 16s ease;
+}
+
+.voy-path-2-j {
+	stroke-dasharray: 89.739px 573.647px;
+}
+
+.voy-path-2-s {
+	stroke-dasharray: 174.363px 573.647px;
+}
+
+.voy-path-2-u {
+	stroke-dasharray: 360.147px 573.647px;
+}
+
+.voy-path-2-n {
+	stroke-dasharray: 530.4778px 573.647px;
+}
+
+.voy-path-2-o {
+	stroke-dasharray: 573.647px 573.647px;
+}
+
+.earth {
+	color: #268BD2;
+}
+
+.jupiter {
+	color: #CB4B16;
+}
+
+.saturn {
+	color: #B58900;
+}
+
+.uranus {
+	color: #2AA198;
+}
+
+.neptune {
+	color: #6C71C4;
+}
