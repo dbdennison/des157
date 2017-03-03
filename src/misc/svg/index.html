@@ -29,24 +29,17 @@
 				https://gist.github.com/Juribiyan/b8b98e603b91abd3c4ea
 			-->
 		</svg>
-		<svg id="svgroot" viewbox="0 0 512 512" preserveaspectratio="xMidYMin">
+		<svg id="svgroot" viewbox="0 0 1024 512" preserveaspectratio="xMidYMin">
 			<filter id="hillshade2">
 				<feColorMatrix type="luminanceToAlpha" />
 				<feDiffuseLighting result="light" diffuseConstant="1" surfaceScale="1" lighting-color="white">
 					<feDistantLight elevation="45" azimuth="200" />
 				</feDiffuseLighting>
 			</filter>
-			<image id="height" x="0" y="0" width="512" height="512" xlink:href="img/CT_Bathy.png" filter="url(#hillshade2)"></image>
-			<!--Try replacining this image with a foreign object of your canvas
-				https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feDiffuseLighting
-				https://testdrive-archive.azurewebsites.net/graphics/hands-on-css3/hands-on_svg-filter-effects.htm
-				http://stackoverflow.com/questions/10757649/apply-svg-filter-to-html5-canvas
-				https://gist.github.com/Juribiyan/b8b98e603b91abd3c4ea
-			-->
+			<image id="height" x="0" y="0" width="1024" height="512" xlink:href="img/CT_Bathy.png" filter="url(#hillshade2)"></image>
 		</svg>
 	</main>
 	<!-- build:section layout.sitefooter -->
 	<!-- /build -->
-<script src="main.js"></script>
 </body>
 </html>
