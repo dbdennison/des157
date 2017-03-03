@@ -31,17 +31,19 @@
             <h1>Blog</h1>
             <article class="blog-entry">
                 <h2>SVG Filters</h2><time datetime="2017-03-01">March 1, 2017</time>
-                <p>SVG filters are a very neat feature… that have rather poor documentation/knowledge base. They can be used to process images in real time, such as applying a gradient map through color matrixes or rendering lighting effects onto 2D objects.
-                    Here I’ve applied a diffuselighting filter with a directional light to generate a hillshade effect on a cleantopo bathymetry dataset, after much trial and error.</p>
+                <p>SVG filters are a very neat feature… that have rather poor documentation/knowledge base. They can be used to process images in real time, such as applying a gradient map through color matrices for hypsometric tinting or rendering lighting
+                    effects onto 2D objects. Here I’ve applied a diffuselighting filter with a directional light to generate a hillshade effect on a cleantopo bathymetry dataset, after much trial and error.</p>
                 <figure>
                     <img src="img/hillshade_bathy.jpg">
                     <figcaption>Bathymetry Hillshade</figcaption>
                 </figure>
-                <p>This research was done for Adam’s zen garden demo, where the lighting effects may help alleviate the complex and performance heavy particle based approach. Excuse the placeholder art!</p>
+                <p>This research was inspired by Adam’s zen garden demo, where the lighting effects may help alleviate the complex and performance heavy particle based approach. Excuse the placeholder art!</p>
                 <figure>
                     <img src="img/hillshade_sand.jpg">
                     <figcaption>Sandy Hillshade</figcaption>
                 </figure>
+                <p>The filter takes the source heightmap input and transforms it into the alpha channel of the image, which is read in the lighting process. The lighting context is set up with feDiffuseLighting, then lit with a directional light for which
+                    elevation and angle can be defined. Additionally, the heightmap is interpreted by a displacement filter to distort a sand texture. Finally, the result of the lighting and displacement are multiplied together.</p>
                 <a href="/misc/svg/">Live demo.</a>
             </article>
             <hr/>
