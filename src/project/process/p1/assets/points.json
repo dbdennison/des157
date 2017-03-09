@@ -1,0 +1,38 @@
+{
+			"type": "FeatureCollection",
+			"features": [
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [-121.749950, 38.543685]
+				},
+				"properties": {
+					"title": "Memorial Union Bus Station",
+					"icon": "bus"
+				}
+			}, 
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [-121.749626, 38.539646]
+				},
+				"properties": {
+					"title": "Peter J. Shields Library",
+					"icon": "library"
+				}
+			},
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [-121.750550, 38.540487]
+				},
+				"properties": {
+					"title": "Hart Hall",
+					"icon": "building"
+				}
+			}
+			]
+}

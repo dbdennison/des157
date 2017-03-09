@@ -2,7 +2,7 @@ module.exports = {
     server: {
       options: {
         port: 157,
-        base: 'dist',
+        base: 'docs',
 		//keepalive: true,
       }
     }

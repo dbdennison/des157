@@ -1,11 +1,11 @@
 module.exports = {
 	dist: {
-		src: ['dist/**/*.html'],
-		dest: 'dist/',
+		src: ['docs/**/*.html'],
+		dest: 'docs/',
 			options: {
 				beautify: true,
 				relative: true,
-				basePath: 'dist/',
+				basePath: 'docs/',
 				sections: {
 					layout: {
 							siteheader: 'src/layout/portal-header.html',

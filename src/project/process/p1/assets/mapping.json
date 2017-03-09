@@ -1,0 +1,6 @@
+{
+  "mapping": [
+    {"file": "foo.txt"},
+    {"file": "bar.txt"}
+  ]
+}

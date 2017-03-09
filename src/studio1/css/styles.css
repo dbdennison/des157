@@ -75,7 +75,7 @@ a[href]:not([class]):active {
 }
 
 a[href="#0"]:not([class]) {
-	border-bottom: 0.1em dotted hsl(194, 100%, 40%);
+	border-bottom: 0.1em dotted hsl(175, 59%, 40%);
 }
 
 p, .body-type {
@@ -232,4 +232,17 @@ img {
 
 .blog-entry {
 	margin-bottom: 4rem;
+}
+
+/*=================
+	ASSN
+=================*/
+
+.user-dp {
+	height: 16rem;
+	border-radius: 8rem;
+}
+
+.centered {
+	text-align: center;
 }
