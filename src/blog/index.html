@@ -17,6 +17,18 @@
 		<section class="main-section blog-main">
 			<h1>Blog</h1>
 			<article class="blog-entry" id="SVG-Filters">
+				<h2>Build Systems</h2><time datetime="2017-03-14">March 14, 2017</time>
+				<p>Build systems are methods for automating tasks in production, tailoring the authoring experience to be more intuitive. The more that can be automated, the more that a creator can create. For web markup this means letting the author be expressive as possible with the language and not worry about non content-specific tasks like feature support or vendor flags. </p>
+				<p>As CSS is implemented differently and new features are explored by multiple browser developers, features are developed behind vendor flags that sandbox potential quirks until the specification is stable. Specifying these flags is not something an author needs to worry about, but is something a browser may require for the feature to function so it can be automated away, or otherwise easily quadruple the lines needed to define a style.</p>
+				<p>Names are neat. They allow us to point to things in an abstracted way, informing function and easing recognition. Named variables let us point to values from multiple sources, and distribute that value wherever it is called to aid cohesion. Such a core programming concept has been missing from CSS, but it is coming.</p>
+				<p>Nesting CSS properties has long been a feature of CSS processors, and it too is becoming a standard feature in CSS4. It allows greater organization of properties by directly relating a child to its parent, rather than declaring a new rule. Where before a media query might be set after a bunch of separable rules, each rule can now have its own media query nested within, declared with a uniform variable definition to keep them consistent.</p>
+				<p>CSSNext is a PostCSS plugin to bridge the gap on these fine features, baking them down into rules that can be read by modern or even older browsers while allowing authors to write in a consistent and reader-friendly way. Machine-optimized code is useful to understand, but is not necessarily useful to write.</p>
+				<a href="dennisonDerek-bs.pdf">Slides</a><br/>
+				<a href="//postcss.org/">PostCSS</a><br/>
+				<a href="//cssnext.io/">CSSNext</a>
+			</article>
+			<hr/>
+			<article class="blog-entry" id="SVG-Filters">
 				<h2>SVG Filters</h2><time datetime="2017-03-01">March 1, 2017</time>
 				<p>SVG filters are a very neat feature… that have rather poor documentation/knowledge base. They can be used to process images in real time, such as applying a gradient map through color matrices for hypsometric tinting or rendering lighting effects onto 2D objects. Here I’ve applied a diffuselighting filter with a directional light to generate a hillshade effect on a cleantopo bathymetry dataset, after much trial and error.</p>
 				<figure>
